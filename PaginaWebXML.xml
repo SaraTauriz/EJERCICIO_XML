@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<estudiante>
+
+   <apellido>Flores Cedeño</apellido>
+   <nombre>Alexandra Alexa</nombre>
+   <semestre>Primer Semestre</semestre>
+   <paralelo>Paralelo "A"</paralelo>
+   <direccion>Manta</direccion>
+   <telefono>0994946046</telefono>
+   <correo>florescedeno@gmail.com</correo>
+
+   <apellido1>Tauriz Solorzano</apellido1>
+   <nombre1>Sara Ivette</nombre1>
+   <semestre1>Sexto Semestre</semestre1>
+   <paralelo1>Paralelo "A"</paralelo1>
+   <direccion1>Manta</direccion1>
+   <telefono1>0994015784</telefono1>
+   <correo1>saratauriz@gmail.com</correo1>
+
+   <apellido2>Mera Palma</apellido2>
+   <nombre2>Diego Raul</nombre2>
+   <semestre2>Primer semestre</semestre2>
+   <paralelo2>Paralelo "A"</paralelo2>
+   <direccion2>Manta</direccion2>
+   <telefono2>0993063875</telefono2>
+   <correo2>diego9899@gmail.com</correo2>
+
+   <apellido3>Palma Mera</apellido3>
+   <nombre3>Raul Diego</nombre3>
+   <semestre3>Primer semestre</semestre3>
+   <paralelo3>Paralelo "A"</paralelo3>
+   <direccion3>Manta</direccion3>
+   <telefono3>0958705341</telefono3>
+   <correo3>palmar784@gmail.com</correo3>
+
+   <apellido4>Cedeño Flores</apellido4>
+   <nombre4>Andres William</nombre4>
+   <semestre4>Primer semestre</semestre4>
+   <paralelo4>Paralelo "B"</paralelo4>
+   <direccion4>Manta</direccion4>
+   <telefono4>0994946046</telefono4>
+   <correo4>cedenoflores@gmail.com</correo4>
+
+   <apellido5>Calderon Calderon</apellido5>
+   <nombre5>Jhonson Juan</nombre5>
+   <semestre5>Primer semestre</semestre5>
+   <paralelo5>Paralelo "B"</paralelo5>
+   <direccion5>Manta</direccion5>
+   <telefono5>0994946046</telefono5>
+   <correo5>calderon1254@gmail.com</correo5>
+
+   <apellido6>Macias Calderon</apellido6>
+   <nombre6>Pepe Pedro</nombre6>
+   <semestre6>Primer semestre</semestre6>
+   <paralelo6>Paralelo "A"</paralelo6>
+   <direccion6>Manta</direccion6>
+   <telefono6>0994946046</telefono6>
+   <correo6>macias_pedro@gmail.com</correo6>
+
+   <apellido7>Calderon Macias</apellido7>
+   <nombre7>Girasol Violeta</nombre7>
+   <semestre7>Primer semestre</semestre7>
+   <paralelo7>Paralelo "A"</paralelo7>
+   <direccion7>Manta</direccion7>
+   <telefono7>0994946046</telefono7>
+   <correo7>girasol5260@gmail.com</correo7>
+
+   <apellido8>Flores Quijije</apellido8>
+   <nombre8>William Zamora</nombre8>
+   <semestre8>Primer semestre</semestre8>
+   <paralelo8>Paralelo "A"</paralelo8>
+   <direccion8>Manta</direccion8>
+   <telefono8>0963930338</telefono8>
+   <correo8>williamflores@gmail.com</correo8>
+
+   <apellido9>Cruz Alvarado</apellido9>
+   <nombre9>Roger David</nombre9>
+   <semestre9>Primer Semestre</semestre9>
+   <paralelo9>Paralelo "A"</paralelo9>
+   <direccion9>Manta</direccion9>
+   <telefono9>0991245789</telefono9>
+   <correo9>cruz_roger@gmail.com</correo9>
+
+</estudiante>

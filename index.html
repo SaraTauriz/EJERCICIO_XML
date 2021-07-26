@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title> Estudiantes XML </title>
+    </head>
+<body>
+<center>
+<h2>Crear una página web usando XML que contenga datos de 10 estudiantes <br></h2>
+</center>
+
+<br>
+
+    <button onclick="estudiante0()">Flores Cedeño Alexandra Alexa</button><br/><br/>
+    <button onclick="estudiante1()">Tauriz Solorzano Sara Ivette</button><br/><br/>
+    <button onclick="estudiante2()">Mera Palma Diego Raul</button><br/><br/>
+    <button onclick="estudiante3()">Palma Mera Raul Diego</button><br/><br/>
+    <button onclick="estudiante4()">Cedeño Flores Andres William</button><br/><br/>
+    <button onclick="estudiante5()">Calderon Calderon Jhonson Juan</button><br/><br/>
+    <button onclick="estudiante6()">Macias Calderon Pepe Pedro</button><br/><br/>
+    <button onclick="estudiante7()">Calderon Macias Girasol Violeta</button><br/><br/>
+    <button onclick="estudiante8()">Flores Quijije William Zamora</button><br/><br/>
+    <button onclick="estudiante9()">Cruz Alvarado Roger David</button><br/><br/>
+
+<div id="info"></div>
+
+</body>
+
+
+
+</html>
+
+
+
+<!-------------------------------Estudiante-------------------------------------------------------->
+<!--se borra si sale mal-->
+<script type="text/javascript">
+
+
+function estudiante0()
+{
+    var resultado = document.getElementById("info");
+    var arr = [];
+
+    if(window.XMLHttpRequest){
+        xmlhttp=new XMLHttpRequest();
+    } else{
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    xmlhttp.onreadystatechange = function(){
+        if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+            if(xmlhttp.responseXML !== null){
+                arr[0] = xmlhttp.responseXML.getElementsByTagName("apellido").item(0);
+                arr[1] = xmlhttp.responseXML.getElementsByTagName("nombre").item(0);
+                arr[2] = xmlhttp.responseXML.getElementsByTagName("semestre").item(0);
+                arr[3] = xmlhttp.responseXML.getElementsByTagName("paralelo").item(0);
+                arr[4] = xmlhttp.responseXML.getElementsByTagName("direccion").item(0);
+                arr[5] = xmlhttp.responseXML.getElementsByTagName("telefono").item(0);
+                arr[6] = xmlhttp.responseXML.getElementsByTagName("correo").item(0); 
+
+
+                resultado.innerHTML = "Apellido: "  + arr[0].firstChild.nodeValue + " "+ "<br>" +
+                                      "Nombre: "    + arr[1].firstChild.nodeValue + " "+ "<br>" +
+                                      "Semestre: "  + arr[2].firstChild.nodeValue + " "+ "<br>" +
+                                      "Paralelo: "  + arr[3].firstChild.nodeValue + " "+ "<br>" +
+                                      "Dirección: " + arr[4].firstChild.nodeValue + " "+ "<br>" +
+                                      "Telefono: "  + arr[5].firstChild.nodeValue + " "+ "<br>" +
+                                      "Correo: "    + arr[6].firstChild.nodeValue;
+            }
+        }
+    }
+
+    xmlhttp.open("GET", "PaginaWebXML.xml", true);
+    xmlhttp.send();
+
+}
+
+//-------------------------------Estudiante1------------------------------------------
+function estudiante1()
+{
+    var resultado = document.getElementById("info");
+    var arr = [];
+
+    if(window.XMLHttpRequest){
+        xmlhttp=new XMLHttpRequest();
+    } else{
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    xmlhttp.onreadystatechange = function(){
+        if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+            if(xmlhttp.responseXML !== null){
+                arr[0] = xmlhttp.responseXML.getElementsByTagName("apellido1").item(0);
+                arr[1] = xmlhttp.responseXML.getElementsByTagName("nombre1").item(0);
+                arr[2] = xmlhttp.responseXML.getElementsByTagName("semestre1").item(0);
+                arr[3] = xmlhttp.responseXML.getElementsByTagName("paralelo1").item(0);
+                arr[4] = xmlhttp.responseXML.getElementsByTagName("direccion1").item(0);
+                arr[5] = xmlhttp.responseXML.getElementsByTagName("telefono1").item(0);
+                arr[6] = xmlhttp.responseXML.getElementsByTagName("correo1").item(0); 
+
+
+                resultado.innerHTML = "Apellido: "  + arr[0].firstChild.nodeValue + " "+ "<br>" +
+                                      "Nombre: "    + arr[1].firstChild.nodeValue + " "+ "<br>" +
+                                      "Semestre: "  + arr[2].firstChild.nodeValue + " "+ "<br>" +
+                                      "Paralelo: "  + arr[3].firstChild.nodeValue + " "+ "<br>" +
+                                      "Dirección: " + arr[4].firstChild.nodeValue + " "+ "<br>" +
+                                      "Telefono: "  + arr[5].firstChild.nodeValue + " "+ "<br>" +
+                                      "Correo: "    + arr[6].firstChild.nodeValue;
+                
+            }
+        }
+    }
+
+    xmlhttp.open("GET", "PaginaWebXML.xml", true);
+    xmlhttp.send();
+}
+
+//-------------------------------Estudiante 2-------------------------------------------------------->
+function estudiante2()
+    {
+        var resultado = document.getElementById("info");
+        var arr = [];
+    
+        if(window.XMLHttpRequest){
+            xmlhttp=new XMLHttpRequest();
+        } else{
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+                if(xmlhttp.responseXML !== null){
+                    arr[0] = xmlhttp.responseXML.getElementsByTagName("apellido2").item(0);
+                    arr[1] = xmlhttp.responseXML.getElementsByTagName("nombre2").item(0);
+                    arr[2] = xmlhttp.responseXML.getElementsByTagName("semestre2").item(0);
+                    arr[3] = xmlhttp.responseXML.getElementsByTagName("paralelo2").item(0);
+                    arr[4] = xmlhttp.responseXML.getElementsByTagName("direccion2").item(0);
+                    arr[5] = xmlhttp.responseXML.getElementsByTagName("telefono2").item(0);
+                    arr[6] = xmlhttp.responseXML.getElementsByTagName("correo2").item(0); 
+    
+    
+                    resultado.innerHTML = "Apellido: "  + arr[0].firstChild.nodeValue + " "+ "<br>" +
+                                          "Nombre: "    + arr[1].firstChild.nodeValue + " "+ "<br>" +
+                                          "Semestre: "  + arr[2].firstChild.nodeValue + " "+ "<br>" +
+                                          "Paralelo: "  + arr[3].firstChild.nodeValue + " "+ "<br>" +
+                                          "Dirección: " + arr[4].firstChild.nodeValue + " "+ "<br>" +
+                                          "Telefono: "  + arr[5].firstChild.nodeValue + " "+ "<br>" +
+                                          "Correo: "    + arr[6].firstChild.nodeValue;
+                    
+                }
+            }
+        }
+    
+        xmlhttp.open("GET", "PaginaWebXML.xml", true);
+        xmlhttp.send();
+    }
+
+//-------------------------------Estudiante 3-------------------------------------------------------->
+function estudiante3()
+    {
+        var resultado = document.getElementById("info");
+        var arr = [];
+    
+        if(window.XMLHttpRequest){
+            xmlhttp=new XMLHttpRequest();
+        } else{
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+                if(xmlhttp.responseXML !== null){
+                    arr[0] = xmlhttp.responseXML.getElementsByTagName("apellido3").item(0);
+                    arr[1] = xmlhttp.responseXML.getElementsByTagName("nombre3").item(0);
+                    arr[2] = xmlhttp.responseXML.getElementsByTagName("semestre3").item(0);
+                    arr[3] = xmlhttp.responseXML.getElementsByTagName("paralelo3").item(0);
+                    arr[4] = xmlhttp.responseXML.getElementsByTagName("direccion3").item(0);
+                    arr[5] = xmlhttp.responseXML.getElementsByTagName("telefono3").item(0);
+                    arr[6] = xmlhttp.responseXML.getElementsByTagName("correo3").item(0); 
+    
+    
+                    resultado.innerHTML = "Apellido: "  + arr[0].firstChild.nodeValue + " "+ "<br>" +
+                                          "Nombre: "    + arr[1].firstChild.nodeValue + " "+ "<br>" +
+                                          "Semestre: "  + arr[2].firstChild.nodeValue + " "+ "<br>" +
+                                          "Paralelo: "  + arr[3].firstChild.nodeValue + " "+ "<br>" +
+                                          "Dirección: " + arr[4].firstChild.nodeValue + " "+ "<br>" +
+                                          "Telefono: "  + arr[5].firstChild.nodeValue + " "+ "<br>" +
+                                          "Correo: "    + arr[6].firstChild.nodeValue;
+                    
+                }
+            }
+        }
+    
+        xmlhttp.open("GET", "PaginaWebXML.xml", true);
+        xmlhttp.send();
+    }
+
+//-------------------------------Estudiante 4-------------------------------------------------------->
+function estudiante4()
+    {
+        var resultado = document.getElementById("info");
+        var arr = [];
+    
+        if(window.XMLHttpRequest){
+            xmlhttp=new XMLHttpRequest();
+        } else{
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+                if(xmlhttp.responseXML !== null){
+                    arr[0] = xmlhttp.responseXML.getElementsByTagName("apellido4").item(0);
+                    arr[1] = xmlhttp.responseXML.getElementsByTagName("nombre4").item(0);
+                    arr[2] = xmlhttp.responseXML.getElementsByTagName("semestre4").item(0);
+                    arr[3] = xmlhttp.responseXML.getElementsByTagName("paralelo4").item(0);
+                    arr[4] = xmlhttp.responseXML.getElementsByTagName("direccion4").item(0);
+                    arr[5] = xmlhttp.responseXML.getElementsByTagName("telefono4").item(0);
+                    arr[6] = xmlhttp.responseXML.getElementsByTagName("correo4").item(0); 
+    
+    
+                    resultado.innerHTML = "Apellido: "  + arr[0].firstChild.nodeValue + " "+ "<br>" +
+                                          "Nombre: "    + arr[1].firstChild.nodeValue + " "+ "<br>" +
+                                          "Semestre: "  + arr[2].firstChild.nodeValue + " "+ "<br>" +
+                                          "Paralelo: "  + arr[3].firstChild.nodeValue + " "+ "<br>" +
+                                          "Dirección: " + arr[4].firstChild.nodeValue + " "+ "<br>" +
+                                          "Telefono: "  + arr[5].firstChild.nodeValue + " "+ "<br>" +
+                                          "Correo: "    + arr[6].firstChild.nodeValue;
+                    
+                }
+            }
+        }
+    
+        xmlhttp.open("GET", "PaginaWebXML.xml", true);
+        xmlhttp.send();
+    }
+
+//-------------------------------Estudiante 5-------------------------------------------------------->
+function estudiante5()
+    {
+        var resultado = document.getElementById("info");
+        var arr = [];
+    
+        if(window.XMLHttpRequest){
+            xmlhttp=new XMLHttpRequest();
+        } else{
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+                if(xmlhttp.responseXML !== null){
+                    arr[0] = xmlhttp.responseXML.getElementsByTagName("apellido5").item(0);
+                    arr[1] = xmlhttp.responseXML.getElementsByTagName("nombre5").item(0);
+                    arr[2] = xmlhttp.responseXML.getElementsByTagName("semestre5").item(0);
+                    arr[3] = xmlhttp.responseXML.getElementsByTagName("paralelo5").item(0);
+                    arr[4] = xmlhttp.responseXML.getElementsByTagName("direccion5").item(0);
+                    arr[5] = xmlhttp.responseXML.getElementsByTagName("telefono5").item(0);
+                    arr[6] = xmlhttp.responseXML.getElementsByTagName("correo5").item(0); 
+    
+    
+                    resultado.innerHTML = "Apellido: "  + arr[0].firstChild.nodeValue + " "+ "<br>" +
+                                          "Nombre: "    + arr[1].firstChild.nodeValue + " "+ "<br>" +
+                                          "Semestre: "  + arr[2].firstChild.nodeValue + " "+ "<br>" +
+                                          "Paralelo: "  + arr[3].firstChild.nodeValue + " "+ "<br>" +
+                                          "Dirección: " + arr[4].firstChild.nodeValue + " "+ "<br>" +
+                                          "Telefono: "  + arr[5].firstChild.nodeValue + " "+ "<br>" +
+                                          "Correo: "    + arr[6].firstChild.nodeValue;
+                    
+                }
+            }
+        }
+    
+        xmlhttp.open("GET", "PaginaWebXML.xml", true);
+        xmlhttp.send();
+    }
+
+//-------------------------------Estudiante 6-------------------------------------------------------->
+function estudiante6()
+    {
+        var resultado = document.getElementById("info");
+        var arr = [];
+    
+        if(window.XMLHttpRequest){
+            xmlhttp=new XMLHttpRequest();
+        } else{
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+                if(xmlhttp.responseXML !== null){
+                    arr[0] = xmlhttp.responseXML.getElementsByTagName("apellido6").item(0);
+                    arr[1] = xmlhttp.responseXML.getElementsByTagName("nombre6").item(0);
+                    arr[2] = xmlhttp.responseXML.getElementsByTagName("semestre6").item(0);
+                    arr[3] = xmlhttp.responseXML.getElementsByTagName("paralelo6").item(0);
+                    arr[4] = xmlhttp.responseXML.getElementsByTagName("direccion6").item(0);
+                    arr[5] = xmlhttp.responseXML.getElementsByTagName("telefono6").item(0);
+                    arr[6] = xmlhttp.responseXML.getElementsByTagName("correo6").item(0); 
+    
+    
+                    resultado.innerHTML = "Apellido: "  + arr[0].firstChild.nodeValue + " "+ "<br>" +
+                                          "Nombre: "    + arr[1].firstChild.nodeValue + " "+ "<br>" +
+                                          "Semestre: "  + arr[2].firstChild.nodeValue + " "+ "<br>" +
+                                          "Paralelo: "  + arr[3].firstChild.nodeValue + " "+ "<br>" +
+                                          "Dirección: " + arr[4].firstChild.nodeValue + " "+ "<br>" +
+                                          "Telefono: "  + arr[5].firstChild.nodeValue + " "+ "<br>" +
+                                          "Correo: "    + arr[6].firstChild.nodeValue;
+                    
+                }
+            }
+        }
+    
+        xmlhttp.open("GET", "PaginaWebXML.xml", true);
+        xmlhttp.send();
+    }
+
+//-------------------------------Estudiante 7-------------------------------------------------------->
+function estudiante7()
+    {
+        var resultado = document.getElementById("info");
+        var arr = [];
+    
+        if(window.XMLHttpRequest){
+            xmlhttp=new XMLHttpRequest();
+        } else{
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+                if(xmlhttp.responseXML !== null){
+                    arr[0] = xmlhttp.responseXML.getElementsByTagName("apellido7").item(0);
+                    arr[1] = xmlhttp.responseXML.getElementsByTagName("nombre7").item(0);
+                    arr[2] = xmlhttp.responseXML.getElementsByTagName("semestre7").item(0);
+                    arr[3] = xmlhttp.responseXML.getElementsByTagName("paralelo7").item(0);
+                    arr[4] = xmlhttp.responseXML.getElementsByTagName("direccion7").item(0);
+                    arr[5] = xmlhttp.responseXML.getElementsByTagName("telefono7").item(0);
+                    arr[6] = xmlhttp.responseXML.getElementsByTagName("correo7").item(0); 
+    
+    
+                    resultado.innerHTML = "Apellido: "  + arr[0].firstChild.nodeValue + " "+ "<br>" +
+                                          "Nombre: "    + arr[1].firstChild.nodeValue + " "+ "<br>" +
+                                          "Semestre: "  + arr[2].firstChild.nodeValue + " "+ "<br>" +
+                                          "Paralelo: "  + arr[3].firstChild.nodeValue + " "+ "<br>" +
+                                          "Dirección: " + arr[4].firstChild.nodeValue + " "+ "<br>" +
+                                          "Telefono: "  + arr[5].firstChild.nodeValue + " "+ "<br>" +
+                                          "Correo: "    + arr[6].firstChild.nodeValue;
+                    
+                }
+            }
+        }
+    
+        xmlhttp.open("GET", "PaginaWebXML.xml", true);
+        xmlhttp.send();
+    }
+
+//-------------------------------Estudiante 8-------------------------------------------------------->
+function estudiante8()
+    {
+        var resultado = document.getElementById("info");
+        var arr = [];
+    
+        if(window.XMLHttpRequest){
+            xmlhttp=new XMLHttpRequest();
+        } else{
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+                if(xmlhttp.responseXML !== null){
+                    arr[0] = xmlhttp.responseXML.getElementsByTagName("apellido8").item(0);
+                    arr[1] = xmlhttp.responseXML.getElementsByTagName("nombre8").item(0);
+                    arr[2] = xmlhttp.responseXML.getElementsByTagName("semestre8").item(0);
+                    arr[3] = xmlhttp.responseXML.getElementsByTagName("paralelo8").item(0);
+                    arr[4] = xmlhttp.responseXML.getElementsByTagName("direccion8").item(0);
+                    arr[5] = xmlhttp.responseXML.getElementsByTagName("telefono8").item(0);
+                    arr[6] = xmlhttp.responseXML.getElementsByTagName("correo8").item(0); 
+    
+    
+                    resultado.innerHTML = "Apellido: "  + arr[0].firstChild.nodeValue + " "+ "<br>" +
+                                          "Nombre: "    + arr[1].firstChild.nodeValue + " "+ "<br>" +
+                                          "Semestre: "  + arr[2].firstChild.nodeValue + " "+ "<br>" +
+                                          "Paralelo: "  + arr[3].firstChild.nodeValue + " "+ "<br>" +
+                                          "Dirección: " + arr[4].firstChild.nodeValue + " "+ "<br>" +
+                                          "Telefono: "  + arr[5].firstChild.nodeValue + " "+ "<br>" +
+                                          "Correo: "    + arr[6].firstChild.nodeValue;
+                    
+                }
+            }
+        }
+    
+        xmlhttp.open("GET", "PaginaWebXML.xml", true);
+        xmlhttp.send();
+    }
+
+//-------------------------------Estudiante 9-------------------------------------------------------->
+function estudiante9()
+    {
+        var resultado = document.getElementById("info");
+        var arr = [];
+    
+        if(window.XMLHttpRequest){
+            xmlhttp=new XMLHttpRequest();
+        } else{
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+                if(xmlhttp.responseXML !== null){
+                    arr[0] = xmlhttp.responseXML.getElementsByTagName("apellido9").item(0);
+                    arr[1] = xmlhttp.responseXML.getElementsByTagName("nombre9").item(0);
+                    arr[2] = xmlhttp.responseXML.getElementsByTagName("semestre9").item(0);
+                    arr[3] = xmlhttp.responseXML.getElementsByTagName("paralelo9").item(0);
+                    arr[4] = xmlhttp.responseXML.getElementsByTagName("direccion9").item(0);
+                    arr[5] = xmlhttp.responseXML.getElementsByTagName("telefono9").item(0);
+                    arr[6] = xmlhttp.responseXML.getElementsByTagName("correo9").item(0); 
+    
+    
+                    resultado.innerHTML = "Apellido: "  + arr[0].firstChild.nodeValue + " "+ "<br>" +
+                                          "Nombre: "    + arr[1].firstChild.nodeValue + " "+ "<br>" +
+                                          "Semestre: "  + arr[2].firstChild.nodeValue + " "+ "<br>" +
+                                          "Paralelo: "  + arr[3].firstChild.nodeValue + " "+ "<br>" +
+                                          "Dirección: " + arr[4].firstChild.nodeValue + " "+ "<br>" +
+                                          "Telefono: "  + arr[5].firstChild.nodeValue + " "+ "<br>" +
+                                          "Correo: "    + arr[6].firstChild.nodeValue;
+                }
+            }
+        }
+        xmlhttp.open("GET", "PaginaWebXML.xml", true);
+        xmlhttp.send();
+    }
+
+</script>
+
+
+
+<style>
+
+body{
+    text-align-last: center;
+        background-image: url(https://eskipaper.com/images/free-grey-wallpaper-1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+}
+button {
+background-color: #606661; 
+border: none;
+color: rgb(2, 1, 1);
+padding: 3px 23px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border: 2px solid rgba(90, 56, 56, 0.185);
+}
+
+#info{
+font-size: 20px;
+}
+
+</style>
